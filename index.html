@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Автомобиль из Китая под ключ - подбор, покупка, доставка | Демо-концепт</title>
+<meta name="description" content="Подбираем, проверяем, покупаем и привозим автомобили из Китая под ключ. Цена фиксируется в договоре до покупки, фотоотчёт на каждом этапе, оплата по факту.">
+<meta property="og:title" content="Автомобиль из Китая под ключ - с фиксированной ценой в договоре">
+<meta property="og:description" content="Подбор, проверка, покупка и доставка авто из Китая. Фотоотчёт на каждом этапе.">
+<meta property="og:image" content="assets/hero.jpg">
+<meta property="og:type" content="website">
+<link rel="preload" as="image" href="assets/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg-dark:#14171c; --bg-dark2:#1c2129; --bg-light:#f4f2ee; --bg-card:#ffffff;
+  --accent:#e8631a; --accent-dark:#c95210; --steel:#8a93a0;
+  --text-dark:#191d23; --text-light:#f4f2ee; --line:rgba(20,23,28,.12);
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Golos Text',system-ui,sans-serif;color:var(--text-dark);background:var(--bg-light);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.font-display{font-family:'Russo One',sans-serif;font-weight:400;line-height:1.15;letter-spacing:.01em}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--accent);color:#fff;
+  font-family:'Russo One',sans-serif;font-size:16px;padding:16px 32px;border:none;border-radius:10px;cursor:pointer;
+  transition:background .2s,transform .2s;letter-spacing:.03em}
+.btn:hover{background:var(--accent-dark);transform:translateY(-2px)}
+.btn-ghost{background:transparent;border:2px solid rgba(244,242,238,.35);color:var(--text-light)}
+.btn-ghost:hover{border-color:var(--accent);background:transparent;color:#fff}
+.eyebrow{font-family:'Russo One',sans-serif;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.section{padding:88px 0}
+.section-dark{background:var(--bg-dark);color:var(--text-light)}
+.section h2{font-size:clamp(26px,4vw,40px);margin-bottom:16px}
+.lead{font-size:18px;color:var(--steel);max-width:640px}
+.section-dark .lead{color:#aab2bf}
+
+/* header */
+.header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(20,23,28,.82);backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,.07)}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:'Russo One',sans-serif;font-size:18px;color:#fff;letter-spacing:.06em}
+.logo span{color:var(--accent)}
+.nav{display:flex;gap:28px;font-size:15px;color:#c8cdd6}
+.nav a:hover{color:#fff}
+.header .btn{padding:11px 22px;font-size:14px}
+@media(max-width:820px){.nav{display:none}}
+@media(max-width:640px){.header .btn{padding:9px 14px;font-size:12px;white-space:nowrap}}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;color:var(--text-light);
+  background:var(--bg-dark) url('assets/hero.jpg') center/cover no-repeat}
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,18,22,.92) 0%,rgba(16,18,22,.72) 38%,rgba(16,18,22,.15) 70%,rgba(16,18,22,.35) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-top:100px;padding-bottom:60px}
+.hero h1{font-size:clamp(32px,5.4vw,62px);max-width:13ch;margin-bottom:20px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero .sub{font-size:clamp(16px,2vw,20px);max-width:520px;color:#d5dae2;margin-bottom:34px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.hero-badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:44px}
+.hero-badges span{border:1px solid rgba(244,242,238,.22);border-radius:999px;padding:8px 18px;font-size:13.5px;color:#dfe4ec;background:rgba(20,23,28,.35)}
+@media(max-width:640px){
+  .hero::before{background:linear-gradient(180deg,rgba(16,18,22,.55) 0%,rgba(16,18,22,.88) 55%,rgba(16,18,22,.95) 100%)}
+  .hero{align-items:flex-end}
+}
+
+/* fears */
+.fears{display:grid;gap:0;margin-top:48px;border-top:1px solid var(--line)}
+.fear{display:grid;grid-template-columns:64px 1fr 1.2fr;gap:24px;align-items:baseline;padding:28px 0;border-bottom:1px solid var(--line)}
+.fear .num{font-family:'Russo One',sans-serif;font-size:22px;color:var(--accent)}
+.fear h3{font-size:19px}
+.fear p{color:#4c535e;font-size:16px}
+@media(max-width:720px){.fear{grid-template-columns:44px 1fr;gap:8px 16px}.fear p{grid-column:2}}
+
+/* steps */
+.steps{display:flex;flex-direction:column;gap:56px;margin-top:56px}
+.step{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.step:nth-child(even){direction:rtl}
+.step:nth-child(even)>*{direction:ltr}
+.step img{border-radius:var(--radius);width:100%;height:320px;object-fit:cover}
+.step .num{font-family:'Russo One',sans-serif;font-size:15px;color:var(--accent);letter-spacing:.14em;margin-bottom:10px}
+.step h3{font-size:24px;margin-bottom:12px}
+.step p{color:#4c535e;max-width:46ch}
+.step-list{list-style:none;margin-top:16px}
+.step-list li{padding-left:26px;position:relative;margin-bottom:8px;color:#33393f;font-size:15.5px}
+.step-list li::before{content:'';position:absolute;left:0;top:9px;width:14px;height:2px;background:var(--accent)}
+@media(max-width:820px){.step{grid-template-columns:1fr;gap:20px}.step img{height:230px}}
+
+/* calculator */
+.calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:48px;align-items:start}
+.calc-field{margin-bottom:26px}
+.calc-field label{display:block;font-size:14px;color:#aab2bf;margin-bottom:10px;letter-spacing:.04em}
+.calc-price{font-family:'Russo One',sans-serif;font-size:30px;color:#fff;margin-bottom:6px}
+input[type=range]{width:100%;accent-color:var(--accent);height:34px;cursor:pointer}
+.seg{display:flex;gap:8px;flex-wrap:wrap}
+.seg button{flex:1;min-width:100px;padding:12px 10px;border-radius:10px;border:1px solid rgba(255,255,255,.16);
+  background:transparent;color:#c8cdd6;font-family:'Golos Text',sans-serif;font-size:14.5px;cursor:pointer;transition:.15s}
+.seg button.on{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+.calc-result{background:var(--bg-dark2);border:1px solid rgba(255,255,255,.09);border-radius:var(--radius);padding:32px}
+.calc-row{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px dashed rgba(255,255,255,.12);font-size:15px}
+.calc-row span:first-child{color:#aab2bf}
+.calc-row b{font-weight:600;white-space:nowrap}
+.calc-total{display:flex;justify-content:space-between;align-items:baseline;padding-top:20px;margin-top:6px}
+.calc-total .sum{font-family:'Russo One',sans-serif;font-size:clamp(26px,3vw,34px);color:var(--accent)}
+.calc-note{font-size:13px;color:#77808d;margin-top:18px;line-height:1.5}
+@media(max-width:820px){.calc-grid{grid-template-columns:1fr}}
+
+/* catalog */
+.catalog{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.car{background:var(--bg-card);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.car:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(20,23,28,.10)}
+.car:first-child{grid-column:span 2}
+.car img{width:100%;height:210px;object-fit:cover}
+.car:first-child img{height:290px}
+.car-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:6px;flex:1}
+.car-tag{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.car h3{font-size:19px}
+.car .specs{font-size:14px;color:var(--steel)}
+.car .price{margin-top:auto;padding-top:12px;font-family:'Russo One',sans-serif;font-size:19px}
+.car .price small{font-family:'Golos Text',sans-serif;font-size:12.5px;color:var(--steel);display:block;margin-top:2px}
+.catalog-note{margin-top:22px;font-size:13.5px;color:var(--steel)}
+@media(max-width:900px){.catalog{grid-template-columns:repeat(2,1fr)}.car:first-child{grid-column:span 2}}
+@media(max-width:600px){.catalog{grid-template-columns:1fr}.car:first-child{grid-column:span 1}.car:first-child img{height:210px}}
+
+/* principles */
+.principles{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:48px;border-top:1px solid rgba(255,255,255,.12)}
+.principle{padding:30px 28px;border-bottom:1px solid rgba(255,255,255,.12)}
+.principle:nth-child(odd){border-right:1px solid rgba(255,255,255,.12)}
+.principle h3{font-size:19px;margin-bottom:8px;color:#fff}
+.principle h3::before{content:'- ';color:var(--accent)}
+.principle p{font-size:15px;color:#aab2bf}
+@media(max-width:720px){.principles{grid-template-columns:1fr}.principle:nth-child(odd){border-right:none}}
+
+/* handover band */
+.band{position:relative;color:var(--text-light);background:url('assets/handover.jpg') center/cover no-repeat}
+.band::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,18,22,.9),rgba(16,18,22,.45))}
+.band .wrap{position:relative;z-index:2;padding-top:96px;padding-bottom:96px}
+.band h2{font-size:clamp(26px,3.6vw,38px);max-width:18ch;margin-bottom:14px}
+.band p{max-width:480px;color:#d5dae2;margin-bottom:30px}
+
+/* form */
+.order-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.order-grid h2{margin-bottom:14px}
+.contacts{margin-top:26px;display:flex;flex-direction:column;gap:10px;font-size:16px}
+.contacts b{font-weight:600}
+.form{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);padding:32px;display:flex;flex-direction:column;gap:16px}
+.form input,.form textarea{font-family:inherit;font-size:15.5px;padding:14px 16px;border:1px solid var(--line);border-radius:10px;background:#fbfaf7;color:var(--text-dark);width:100%}
+.form input:focus,.form textarea:focus{outline:2px solid var(--accent);outline-offset:-1px;border-color:transparent}
+.form small{color:var(--steel);font-size:12.5px;line-height:1.5}
+.form-done{display:none;background:#eef7ee;border:1px solid #bfe0bf;color:#2c6e2e;padding:18px;border-radius:10px;font-size:15px}
+@media(max-width:820px){.order-grid{grid-template-columns:1fr}}
+
+/* footer */
+.footer{background:#0f1216;color:#77808d;padding:36px 0;font-size:14px}
+.footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="wrap">
+    <a class="logo" href="#top">АВТО<span>·</span>ИЗ&nbsp;КИТАЯ</a>
+    <nav class="nav">
+      <a href="#how">Как работаем</a>
+      <a href="#calc">Калькулятор</a>
+      <a href="#catalog">Каталог</a>
+      <a href="#order">Контакты</a>
+    </nav>
+    <a class="btn" href="#calc">Рассчитать стоимость</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow">Подбор - покупка - доставка</div>
+    <h1>Автомобиль из Китая <em>под ключ</em> с ценой в договоре</h1>
+    <p class="sub">Подбираем, проверяем и привозим авто из Китая. Полная стоимость фиксируется в договоре до покупки - без сюрпризов на таможне.</p>
+    <div class="hero-actions">
+      <a class="btn" href="#calc">Рассчитать стоимость</a>
+      <a class="btn btn-ghost" href="#how">Как проходит сделка</a>
+    </div>
+    <div class="hero-badges">
+      <span>Договор и смета до покупки</span>
+      <span>Фотоотчёт каждого этапа</span>
+      <span>Оплата по факту шага</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="fears">
+  <div class="wrap">
+    <div class="eyebrow">Знакомые страхи?</div>
+    <h2>Что обычно пугает при покупке авто из Китая</h2>
+    <p class="lead">Четыре риска, о которых нам чаще всего рассказывают клиенты, и как мы их закрываем.</p>
+    <div class="fears">
+      <div class="fear reveal">
+        <div class="num">01</div>
+        <h3>«Цена вырастет по дороге»</h3>
+        <p>Считаем все расходы заранее - авто, логистика, пошлина, утильсбор, услуга. Итоговая смета входит в договор и не меняется.</p>
+      </div>
+      <div class="fear reveal">
+        <div class="num">02</div>
+        <h3>«Продадут битое или залитое»</h3>
+        <p>До покупки автомобиль осматривает наш специалист в Китае: кузов, электроника, история. Вы получаете фото- и видеоотчёт до оплаты.</p>
+      </div>
+      <div class="fear reveal">
+        <div class="num">03</div>
+        <h3>«Таможня преподнесёт сюрприз»</h3>
+        <p>Считаем платежи по актуальным ставкам на день договора. Ставки регулярно меняются - поэтому фиксируем расчёт заранее, а не «по факту».</p>
+      </div>
+      <div class="fear reveal">
+        <div class="num">04</div>
+        <h3>«Заплачу - и исчезнут»</h3>
+        <p>Оплата поэтапная: подбор, покупка, доставка. Каждый следующий платёж - только после подтверждения предыдущего шага.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how" style="background:#ece9e2">
+  <div class="wrap">
+    <div class="eyebrow">Как работаем</div>
+    <h2>Пять шагов до вашего автомобиля</h2>
+    <div class="steps">
+      <div class="step reveal">
+        <div>
+          <div class="num">ШАГ 01</div>
+          <h3>Заявка и подбор</h3>
+          <p>Обсуждаем бюджет и задачи, подбираем 3-5 вариантов у проверенных продавцов и на аукционах Китая. По каждому - честный расчёт «под ключ».</p>
+          <ul class="step-list">
+            <li>подбор под ваш бюджет, а не «что есть»</li>
+            <li>сравнение комплектаций и цен</li>
+            <li>смета до подписания договора</li>
+          </ul>
+        </div>
+        <img src="assets/stage-port.jpg" alt="Новые автомобили в контейнерном порту Китая перед отправкой" loading="lazy">
+      </div>
+      <div class="step reveal">
+        <div>
+          <div class="num">ШАГ 02</div>
+          <h3>Проверка автомобиля</h3>
+          <p>Наш специалист лично осматривает автомобиль до покупки: состояние кузова, салона, батареи, пробег, юридическую чистоту.</p>
+          <ul class="step-list">
+            <li>фото- и видеоотчёт до оплаты</li>
+            <li>проверка по базам и документам</li>
+            <li>торг с продавцом в вашу пользу</li>
+          </ul>
+        </div>
+        <img src="assets/stage-inspection.jpg" alt="Специалист осматривает автомобиль перед покупкой" loading="lazy">
+      </div>
+      <div class="step reveal">
+        <div>
+          <div class="num">ШАГ 03</div>
+          <h3>Покупка и оплата</h3>
+          <p>Заключаем договор, выкупаем автомобиль и оформляем экспортные документы. Вы платите за автомобиль только после успешной проверки.</p>
+          <ul class="step-list">
+            <li>договор с фиксированной сметой</li>
+            <li>выкуп у официального продавца или аукциона</li>
+            <li>полный пакет экспортных документов</li>
+          </ul>
+        </div>
+        <img src="assets/stage-logistics.jpg" alt="Погрузка автомобиля на автовоз для отправки в Россию" loading="lazy">
+      </div>
+      <div class="step reveal">
+        <div>
+          <div class="num">ШАГ 04</div>
+          <h3>Доставка и растаможка</h3>
+          <p>Везём автомобиль автовозом или в контейнере, проходим таможню и оформляем ЭПТС. На каждом этапе присылаем фото и статус.</p>
+          <ul class="step-list">
+            <li>страховка на время перевозки</li>
+            <li>таможенное оформление «под ключ»</li>
+            <li>ЭПТС и помощь с постановкой на учёт</li>
+          </ul>
+        </div>
+        <img src="assets/stage-port.jpg" alt="Ряды новых автомобилей в порту перед погрузкой" loading="lazy">
+      </div>
+      <div class="step reveal">
+        <div>
+          <div class="num">ШАГ 05</div>
+          <h3>Выдача ключей</h3>
+          <p>Передаём автомобиль в вашем городе вместе с полным пакетом документов. Финальный расчёт - только после того, как вы приняли машину.</p>
+          <ul class="step-list">
+            <li>доставка в ваш город</li>
+            <li>приёмка вместе с вами</li>
+            <li>поддержка после покупки</li>
+          </ul>
+        </div>
+        <img src="assets/handover.jpg" alt="Передача ключей новым владельцам автомобиля" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark" id="calc">
+  <div class="wrap">
+    <div class="eyebrow">Фирменный калькулятор</div>
+    <h2>Сколько стоит привезти авто под ключ</h2>
+    <p class="lead">Передвиньте ползунок и выберите мощность - калькулятор покажет ориентировочную полную стоимость с разбивкой.</p>
+    <div class="calc-grid">
+      <div>
+        <div class="calc-field">
+          <label>Цена автомобиля в Китае</label>
+          <div class="calc-price" id="priceView">3 000 000 ₽</div>
+          <input type="range" id="price" min="1500000" max="8000000" step="50000" value="3000000">
+        </div>
+        <div class="calc-field">
+          <label>Тип двигателя</label>
+          <div class="seg" id="engineSeg">
+            <button class="on" data-v="ice">Бензин / гибрид</button>
+            <button data-v="ev">Электро</button>
+          </div>
+        </div>
+        <div class="calc-field">
+          <label>Мощность двигателя</label>
+          <div class="seg" id="powerSeg">
+            <button data-v="150">до 150 л.с.</button>
+            <button class="on" data-v="250">151-250 л.с.</button>
+            <button data-v="999">более 250 л.с.</button>
+          </div>
+        </div>
+        <p class="calc-note">Модель расчёта: новый автомобиль, ввоз физическим лицом для личного пользования. С 1 ноября 2025 года утильсбор для мощных авто существенно вырос, ставки индексируются - поэтому расчёт предварительный, точную смету фиксируем в договоре.</p>
+      </div>
+      <div class="calc-result">
+        <div class="calc-row"><span>Автомобиль в Китае</span><b id="rCar">3 000 000 ₽</b></div>
+        <div class="calc-row"><span>Таможенная пошлина (~48%)</span><b id="rDuty">1 440 000 ₽</b></div>
+        <div class="calc-row"><span>Утильсбор</span><b id="rUtil">~1 000 000 ₽</b></div>
+        <div class="calc-row"><span>Доставка, страховка, оформление</span><b id="rLog">~300 000 ₽</b></div>
+        <div class="calc-row"><span>Услуга «под ключ»</span><b id="rFee">120 000 ₽</b></div>
+        <div class="calc-total"><span>Итого под ключ, ориентир</span><span class="sum" id="rTotal">5 860 000 ₽</span></div>
+        <p class="calc-note">Это предварительная оценка, а не оферта. Точный расчёт по актуальным ставкам и курсу сделаем под конкретный автомобиль - и зафиксируем в договоре.</p>
+        <a class="btn" href="#order" style="width:100%;margin-top:8px">Получить точный расчёт</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="catalog">
+  <div class="wrap">
+    <div class="eyebrow">Каталог</div>
+    <h2>Что сейчас везут из Китая</h2>
+    <p class="lead">Популярные классы автомобилей с ориентировочной ценой «под ключ». В боевом каталоге здесь будут живые позиции с фото, характеристиками и актуальными ценами.</p>
+    <div class="catalog">
+      <article class="car reveal">
+        <img src="assets/car-hybrid-crossover.jpg" alt="Гибридный кроссовер из Китая" loading="lazy">
+        <div class="car-body">
+          <div class="car-tag">Хит спроса</div>
+          <h3>Гибридный кроссовер</h3>
+          <p class="specs">Запас хода от 1000 км - расход 5-6 л - полный привод</p>
+          <div class="price">от 4 800 000 ₽<small>под ключ, ориентировочно</small></div>
+        </div>
+      </article>
+      <article class="car reveal">
+        <img src="assets/car-ev-sedan.jpg" alt="Электроседан бизнес-класса из Китая" loading="lazy">
+        <div class="car-body">
+          <div class="car-tag">Электро</div>
+          <h3>Электроседан бизнес-класса</h3>
+          <p class="specs">Запас хода 600+ км - разгон 3,8 с - премиальный салон</p>
+          <div class="price">от 5 200 000 ₽<small>под ключ, ориентировочно</small></div>
+        </div>
+      </article>
+      <article class="car reveal">
+        <img src="assets/car-sedan.jpg" alt="Бизнес-седан с бензиновым двигателем из Китая" loading="lazy">
+        <div class="car-body">
+          <div class="car-tag">ДВС</div>
+          <h3>Бизнес-седан</h3>
+          <p class="specs">2.0 л - классический автомат - простое обслуживание</p>
+          <div class="price">от 3 600 000 ₽<small>под ключ, ориентировочно</small></div>
+        </div>
+      </article>
+      <article class="car reveal">
+        <img src="assets/car-coupe-suv.jpg" alt="Купе-кроссовер из Китая" loading="lazy">
+        <div class="car-body">
+          <div class="car-tag">Спорт</div>
+          <h3>Купе-кроссовер</h3>
+          <p class="specs">Яркий дизайн - богатая комплектация - полный привод</p>
+          <div class="price">от 5 000 000 ₽<small>под ключ, ориентировочно</small></div>
+        </div>
+      </article>
+      <article class="car reveal">
+        <img src="assets/car-offroad.jpg" alt="Рамный внедорожник из Китая" loading="lazy">
+        <div class="car-body">
+          <div class="car-tag">Оффроуд</div>
+          <h3>Внедорожник</h3>
+          <p class="specs">Рама или несущий кузов - блокировки - буксировка</p>
+          <div class="price">от 5 800 000 ₽<small>под ключ, ориентировочно</small></div>
+        </div>
+      </article>
+      <article class="car reveal">
+        <img src="assets/car-minivan.jpg" alt="Премиальный минивэн из Китая" loading="lazy">
+        <div class="car-body">
+          <div class="car-tag">Семейный</div>
+          <h3>Премиальный минивэн</h3>
+          <p class="specs">7 мест - капитанские кресла - тихий салон</p>
+          <div class="price">от 7 900 000 ₽<small>под ключ, ориентировочно</small></div>
+        </div>
+      </article>
+    </div>
+    <p class="catalog-note">Цены - ориентир на ноябрь 2026 года и зависят от комплектации, курса и ставок растаможки. Точный расчёт делаем под конкретный автомобиль и фиксируем в договоре.</p>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="wrap">
+    <div class="eyebrow">Почему нам доверяют</div>
+    <h2>Четыре принципа, с которых начинается работа</h2>
+    <div class="principles">
+      <div class="principle reveal">
+        <h3>Смета в договоре, а не в переписке</h3>
+        <p>Все расходы - от выкупа до ЭПТС - фиксируются документально до покупки автомобиля.</p>
+      </div>
+      <div class="principle reveal">
+        <h3>Фото и видео каждого этапа</h3>
+        <p>Осмотр, выкуп, погрузка, граница - вы видите свой автомобиль на каждом шаге, а не верите на слово.</p>
+      </div>
+      <div class="principle reveal">
+        <h3>Оплата по факту шага</h3>
+        <p>Никаких «100% предоплат»: каждый платёж привязан к подтверждённому этапу сделки.</p>
+      </div>
+      <div class="principle reveal">
+        <h3>Доводим до постановки на учёт</h3>
+        <p>ЭПТС, СБКТС, помощь с ГИБДД - работа заканчивается номерами на вашей машине, а не на границе.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="eyebrow">Результат</div>
+    <h2>Вы получаете ключи от проверенного автомобиля</h2>
+    <p>Без переплат посредникам-однодневкам, без сюрпризов на таможне и без «кота в мешке» - с полным пакетом документов и понятной историей сделки.</p>
+    <a class="btn" href="#order">Обсудить мой автомобиль</a>
+  </div>
+</section>
+
+<section class="section" id="order">
+  <div class="wrap order-grid">
+    <div>
+      <div class="eyebrow">Заявка</div>
+      <h2>Расскажите, какой автомобиль нужен</h2>
+      <p class="lead">Ответим с подбором вариантов и точным расчётом «под ключ». Это ни к чему не обязывает.</p>
+      <div class="contacts">
+        <div>Телефон: <b>{{телефон}}</b></div>
+        <div>Telegram / WhatsApp: <b>{{мессенджер}}</b></div>
+        <div>Работаем по всей России, офис - {{город}}</div>
+      </div>
+    </div>
+    <form class="form" id="orderForm" novalidate>
+      <input type="text" name="name" placeholder="Ваше имя" required>
+      <input type="tel" name="phone" placeholder="Телефон или Telegram" required>
+      <textarea name="wish" rows="4" placeholder="Какой автомобиль ищете? Модель, бюджет, сроки - в свободной форме"></textarea>
+      <button class="btn" type="submit">Рассчитать стоимость</button>
+      <small>Нажимая кнопку, вы соглашаетесь с условиями обработки персональных данных. Никакого спама - один осмысленный ответ по вашей заявке.</small>
+      <div class="form-done" id="formDone">Заявка принята. Менеджер свяжется с вами в ближайшее рабочее время.</div>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div>© 2026 - Авто из Китая под ключ. Демо-концепт сайта.</div>
+    <div>Подбор - проверка - покупка - доставка - растаможка</div>
+  </div>
+</footer>
+
+<script>
+// Калькулятор «под ключ» (предварительная модель, новые авто, ввоз физлицом)
+(function(){
+  var DELIVERY = 300000;           // доставка + страховка + оформление, ориентир
+  var DUTY = 0.48;                 // единая ставка для новых авто от стоимости
+  var UTIL = {'150': 5200, '250': 1000000, '999': 1350000}; // утильсбор по мощности, ориентир
+  var priceEl = document.getElementById('price');
+  var priceView = document.getElementById('priceView');
+  var power = '250';
+  var fmt = function(n){ return Math.round(n).toLocaleString('ru-RU') + ' ₽'; };
+
+  function recalc(){
+    var p = +priceEl.value;
+    priceView.textContent = fmt(p);
+    var duty = p * DUTY;
+    var util = UTIL[power];
+    var fee = Math.max(p * 0.04, 80000);
+    document.getElementById('rCar').textContent = fmt(p);
+    document.getElementById('rDuty').textContent = '~' + fmt(duty);
+    document.getElementById('rUtil').textContent = util < 10000 ? fmt(util) : '~' + fmt(util);
+    document.getElementById('rLog').textContent = '~' + fmt(DELIVERY);
+    document.getElementById('rFee').textContent = fmt(fee);
+    document.getElementById('rTotal').textContent = 'от ' + fmt(p + duty + util + DELIVERY + fee);
+  }
+  priceEl.addEventListener('input', recalc);
+  document.getElementById('powerSeg').addEventListener('click', function(e){
+    var b = e.target.closest('button'); if(!b) return;
+    this.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});
+    b.classList.add('on'); power = b.dataset.v; recalc();
+  });
+  document.getElementById('engineSeg').addEventListener('click', function(e){
+    var b = e.target.closest('button'); if(!b) return;
+    this.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});
+    b.classList.add('on');
+  });
+  recalc();
+})();
+
+// Форма-заглушка для демо (в боевом сайте подключается к почте/Telegram-боту компании)
+document.getElementById('orderForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var f = e.target;
+  if(!f.name.value.trim() || !f.phone.value.trim()){
+    [f.name, f.phone].forEach(function(el){
+      if(!el.value.trim()) el.style.outline = '2px solid #d0451a';
+      el.addEventListener('input', function(){ el.style.outline = ''; }, {once:true});
+    });
+    return;
+  }
+  document.getElementById('formDone').style.display = 'block';
+  f.querySelector('button').disabled = true;
+  f.querySelector('button').textContent = 'Заявка отправлена';
+});
+
+// Плавное появление блоков при прокрутке
+var io = new IntersectionObserver(function(entries){
+  entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+}, {threshold: .12});
+document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+</script>
+</body>
+</html>
